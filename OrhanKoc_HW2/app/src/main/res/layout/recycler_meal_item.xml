@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemMealConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@android:color/holo_red_light"
+    android:padding="16dp">
+
+    <!-- Yemek Görseli -->
+    <ImageView
+        android:id="@+id/imgItemMealColor"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="16dp"
+        app:srcCompat="@drawable/food"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!-- Şirket Adı -->
+    <TextView
+        android:id="@+id/tvItemMealCompanyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Restaurant Name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/imgItemMealColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Yemek Konsepti -->
+    <TextView
+        android:id="@+id/tvItemMealConcept"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Concept: Wedding"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="14sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintStart_toEndOf="@id/imgItemMealColor"
+        app:layout_constraintTop_toBottomOf="@id/tvItemMealCompanyName"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
